@@ -1,10 +1,14 @@
 import type { TGuitar } from '../types';
 
+// Asigna los types a las variables en el componente GUITAR
 type GuitarProps = {
+    // El prop guitar tiene los types de TGuitar
     guitar: TGuitar;
+    // La funcion como prop addToCart toma el item de TGuitar pero no devuelve nada
     addToCart: (item: TGuitar) => void;
 };
 
+// Asigna los types a los props en el componente GUITARPROPS
 export const Guitar = ({ guitar, addToCart }: GuitarProps) => {
     const { name, image, description, price } = guitar;
 
